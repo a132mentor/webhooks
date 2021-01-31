@@ -1,6 +1,6 @@
 name: Test
 "on":
-  push:
+  Delete
     branches:
       - master
       - dependabot/npm_and_yarn/**
@@ -24,7 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/delete setup
+
         with:
           node-version: 12.x
       - run: npm ci
